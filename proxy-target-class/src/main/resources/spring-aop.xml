@@ -15,7 +15,7 @@
 
     <context:component-scan base-package="in.code4j.springdemo.proxytargetclass.aop"/>
 
-    <aop:config proxy-target-class="false">
+    <aop:config proxy-target-class="true">
         <aop:aspect id="log" ref="logHandler">
             <aop:pointcut id="printLog"
                           expression="execution(* in.code4j.springdemo.proxytargetclass.aop.service..*(..))"/>
